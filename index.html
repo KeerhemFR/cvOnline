@@ -12,15 +12,46 @@
 
   <body>
     <header>
-      <h1>Guillaume Keerhem</h1>
+      <h1>Guillaume Keerhem</h1> <!--titre page-->
     </header>
 
     <main>
+      <!-- menu -->
+      <button class="menu" onclick="openPage('contact', this, '#C0453E')">Contact</button>
+      <button class="menu" onclick="openPage('aPropos', this, '#C0453E')" id="defaultOpen">A propos</button>
+      <button class="menu" onclick="openPage('parcours', this, '#C0453E')">Parcours</button>
+      <button class="menu" onclick="openPage('competences', this, '#C0453E')">Compétences</button>
+      <button class="menu" onclick="openPage('portfolio', this, '#C0453E')">Portfolio</button>
+      <!-- contact -->
+      <div class="contenu" id="contact">
+        <div class="">
+          <div class="tige">
 
+          </div>
+          <h3>Contact</h3>
+        </div>
+      </div>
+      <!-- a propos -->
+      <div class="contenu" id="aPropos">
+        <h3>A propos</h3>
+      </div>
+      <!-- parcours -->
+      <div class="contenu" id="parcours">
+        <h3>Parcours</h3>
+      </div>
+      <!-- compétences -->
+      <div class="contenu" id="competences">
+        <h3>Compétences</h3>
+      </div>
+      <!-- portfolio -->
+      <div class="contenu" id="portfolio">
+        <h3>Portfolio</h3>
+      </div>
     </main>
 
     <footer>
 
     </footer>
+
   </body>
 </html>
