@@ -196,3 +196,12 @@ h3{
   position: relative;
   margin-bottom: 100px;
 }
+
+@media screen and (max-width:480px){
+  .contact{
+    display: none;
+  }
+  .menu{
+    width: 25%;
+  }
+}
