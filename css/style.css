@@ -54,6 +54,7 @@ h3{
 
 .contenu{
   display: none;
+  padding-top: 50px;
 }
 
 .backgroundPic{
@@ -116,7 +117,7 @@ h3{
   position: absolute;
   width: 5px;
   background-color: #282E3A;
-  top: 70px;
+  top: 100px;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
@@ -125,9 +126,9 @@ h3{
 /* box */
 .timebox{
   padding: 0px 40px;
+  margin: 20px 0;
   position: relative;
   width: 50%;
-  border-left: solid #C0453E 4px;
 }
 
 /* The circles on the timeline */
@@ -146,6 +147,13 @@ h3{
 
 .boxleft{
   left: 0;
+  border-left: solid #C0453E 4px;
+}
+
+.boxright{
+  left: 50%;
+  border-right: solid #C0453E 4px;
+  text-align: right;
 }
 
 .timedate{
@@ -164,9 +172,27 @@ h3{
   padding-bottom: 10px;
 }
 
-.job{
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  color: #282E3A;
+.padBas{
+  padding-bottom: 10px;
+}
+
+.boxright::after{
+  left: -17px;
+}
+
+.absolG{
+  position: absolute;
+  left: 0;
+  width: 50%;
+}
+
+.absolD{
+  position: absolute;
+  left: 50%;
+  width: 50%;
+}
+
+.relat{
+  position: relative;
+  margin-bottom: 100px;
 }

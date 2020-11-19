@@ -15,25 +15,27 @@
       <h1>GUILLAUME KEERHEM</h1> <!--titre page-->
       <h2>Développeur Web Junior</h2>
     </header>
-
-    <main>
-      <!-- menu -->
+    <!-- menu -->
+    <nav>
       <button class="menu" onclick="openPage('contact', this, '#C0453E')">Contact</button>
       <button class="menu" onclick="openPage('aPropos', this, '#C0453E')" id="defaultOpen">A propos</button>
       <button class="menu" onclick="openPage('parcours', this, '#C0453E')">Parcours</button>
       <button class="menu" onclick="openPage('competences', this, '#C0453E')">Compétences</button>
       <button class="menu" onclick="openPage('portfolio', this, '#C0453E')">Portfolio</button>
+    </nav>
+
+    <main>
       <!-- contact -->
-      <div class="contenu" id="contact">
+      <section class="contenu" id="contact">
         <div class="">
           <h3>Contact</h3>
           <div class="backgroundPic contactPic">
 
           </div>
         </div>
-      </div>
+      </section>
       <!-- a propos -->
-      <div class="contenu" id="aPropos">
+      <section class="contenu" id="aPropos">
         <h3>A propos</h3>
         <div class="backgroundPic proposPic">
           <!-- <a href='https://fr.freepik.com/photos/arbre'>Arbre photo créé par tawatchai07 - fr.freepik.com</a> -->
@@ -42,27 +44,39 @@
             <p class="txtOnBack">&emsp;M'étans mis a la programmation récemment, de par ma passion du jeu vidéo j'étais quand même curieux de ce qu'il se passe en arrière plan. Egalement passionné du Japon et de sa culture, il m'arrive également de combiner ces deux passions lorsque je prend le rôle de commentateur lors d'évènement de jeux vidéo en japonais.</p>
           </div>
         </div>
-      </div>
+      </section>
       <!-- parcours -->
-      <div class="contenu" id="parcours">
-        <!-- <h3>Parcours</h3> -->
+      <section class="contenu" id="parcours">
         <!-- <p class="conText" style="text-align: center;">On progress</p> -->
+
         <div class="timeline">
+          <div class="relat">
+            <h3 class="absolG">Expériences professionnelles</h3>
+            <h3 class="absolD">Diplômes et formations</h3>
+          </div>
           <div class="timebox boxleft">
+            <p class="timedate">Septembre 2020 - Juin 2021</p>
+            <p class="timejob">AGEVAL • Atelier numérique</p>
+            <p class="conText padBas">CDDI • Valenciennes</p>
+            <p class="conText padBas">&emsp;•Création de CV Web</p>
+            <p class="conText padBas">&emsp;•Projets de groupe</p>
+            <p class="conText padBas">&emsp;•Développement des compétences numériques</p>
+          </div>
+          <div class="timebox boxright">
             <p class="timedate">squalala</p>
             <p class="timejob">Dev web</p>
-            <p class="job">squalalalalala</p>
+            <p class="conText">squalalalalala</p>
           </div>
         </div>
-      </div>
+      </section>
       <!-- compétences -->
-      <div class="contenu" id="competences">
+      <section class="contenu" id="competences">
         <h3>Compétences</h3>
-      </div>
+      </section>
       <!-- portfolio -->
-      <div class="contenu" id="portfolio">
+      <section class="contenu" id="portfolio">
         <h3>Portfolio</h3>
-      </div>
+      </section>
     </main>
 
     <footer>
