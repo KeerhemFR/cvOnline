@@ -52,6 +52,10 @@ h3{
   background-color: #6B7487;
 }
 
+.menuIcons{
+  display: none;
+}
+
 .contenu{
   display: none;
   padding-top: 50px;
@@ -198,10 +202,33 @@ h3{
 }
 
 @media screen and (max-width:480px){
+  /* header */
+  h1{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
+  h2{
+    font-size: 22px;
+  }
+
+  header{
+    height: 110px;
+  }
+
+  /* menu */
   .contact{
     display: none;
   }
   .menu{
     width: 25%;
+  }
+
+  .menuResp p {
+    display: none;
+  }
+
+  .menuIcons{
+    display: block;
   }
 }
