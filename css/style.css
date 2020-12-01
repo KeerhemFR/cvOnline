@@ -59,7 +59,7 @@ h3{
   background-color: #6B7487;
 }
 
-.menuIcons{
+.menuResp i{
   display: none;
 }
 
@@ -317,6 +317,19 @@ h3{
   padding: 30px 20px 0 20px;
 }
 
+/* bottom nav */
+#bottomNav{
+  position: fixed;
+  flex-flow: row wrap;
+  bottom: 0;
+  z-index: 10;
+}
+
+#bottomNav>ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 768px){
   /* contact */
   .contMail{
@@ -372,11 +385,11 @@ h3{
     width: 25%;
   }
 
-  .menuResp p {
+  .menuResp span {
     display: none;
   }
 
-  .menuIcons{
+  .menuResp i{
     display: block;
   }
 
