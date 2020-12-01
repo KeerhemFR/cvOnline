@@ -33,6 +33,10 @@ h3{
   clear: both;
 }
 
+.alignRight{
+  text-align: right;
+}
+
 .tige{
   border-left: solid 4px #C0453E;
 }
@@ -217,6 +221,25 @@ h3{
   border: solid 4px #C0453E;
   border-radius: 50%;
   background-color: white;
+  z-index: 2;
+}
+
+.absolInfo{
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  border: solid 4px #282E3A;
+  border-radius: 100px;
+  background-color: rgba(107,116,135, 0.7);
+  z-index: 1
+}
+
+.absolInfo p{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  padding: 42px 20px;
 }
 
 .absolCont img{
@@ -224,12 +247,12 @@ h3{
   padding: 25px 25px;
 }
 
-#contPhone{
+.contPhone{
   top: 40px;
   left: 60px;
 }
 
-#contGit{
+.contGit{
   bottom: 40px;
   left: 60px;
 }
@@ -240,12 +263,12 @@ h3{
   transform: translate(-50%, -50%);
 }
 
-#contMail{
+.contMail{
   top: 40px;
   right: 60px;
 }
 
-#contLink{
+.contLink{
   bottom: 40px;
   right: 60px;
 }
