@@ -320,14 +320,20 @@ h3{
 /* bottom nav */
 #bottomNav{
   position: fixed;
-  flex-flow: row wrap;
+  width: 100%;
   bottom: 0;
   z-index: 10;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #C0453E;
+  display: none;
 }
 
 #bottomNav>ul{
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px){
@@ -368,6 +374,10 @@ h3{
 
 @media screen and (max-width:480px){
   /* header */
+  body{
+    padding-bottom: 70px;
+  }
+
   h1{
     font-size: 40px;
     padding-top: 30px;
@@ -390,6 +400,10 @@ h3{
   }
 
   .menuResp i{
+    display: block;
+  }
+
+  #bottomNav{
     display: block;
   }
 
