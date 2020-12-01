@@ -183,6 +183,10 @@ h3{
   padding-bottom: 10px;
 }
 
+.padExp{
+  padding: 0px 10px 10px 10px;
+}
+
 .padBas{
   padding-bottom: 10px;
 }
@@ -311,6 +315,42 @@ h3{
 
 .compDesc{
   padding: 30px 20px 0 20px;
+}
+
+@media screen and (max-width: 768px){
+  /* contact */
+  .contMail{
+    top: 160px;
+  }
+
+  .contGit{
+    top: 280px;
+  }
+
+  .contLink{
+    top: 400px;
+  }
+
+  #contCv{
+    top: 580px;
+  }
+
+  .backgroundPic{
+    height: 680px;
+  }
+
+  /* timeline */
+  .timeline{
+    width: 600px;
+  }
+
+  .timebox{
+    width: 40%;
+  }
+
+  .timebox::after{
+    right: 8px;
+  }
 }
 
 @media screen and (max-width:480px){
