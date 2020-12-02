@@ -107,11 +107,11 @@ h3{
 }
 
 .proposPic{
-  background-image: url(../img/kyotoMichi.jpg);
+  background-image: url(../img/kyotoMichi-1600px.jpg);
 }
 
 .contactPic{
-  background-image: url(../img/tokyoNight.jpg);
+  background-image: url(../img/tokyoNight-1600px.jpg);
 }
 
  .txtOnBack{
@@ -306,6 +306,10 @@ h3{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#contCv:hover{
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .contMail{
