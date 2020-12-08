@@ -242,6 +242,14 @@ h3{
 }
 
 /* parcours responsive */
+.parcourMobile{
+  display: none;
+}
+
+.timeboxMobile{
+  width: 70%;
+  margin: 20px auto;
+}
 
 /* contact */
 
@@ -503,4 +511,7 @@ h3{
      display: none;
    }
 
+   .parcourMobile{
+     display: block;
+   }
 }
