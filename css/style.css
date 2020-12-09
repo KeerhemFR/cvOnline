@@ -146,7 +146,7 @@ h3{
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -399,16 +399,18 @@ h3{
   width: 100%;
 }
 
-@media screen and (max-width: 768px){
-  header>a{
-    position: static;
-    top: auto;
-    right: auto;
-    padding: 7px 40px;
+@media screen and (max-width: 1024px){
+  /* timeline */
+  .timeline{
+    width: 650px;
   }
 
-  header{
-    padding-bottom: 20px;
+  .timebox{
+    width: 40%;
+  }
+
+  .timebox::after{
+    right: 3px;
   }
 
   /* contact */
@@ -431,19 +433,45 @@ h3{
   .backgroundPic{
     height: 680px;
   }
+}
 
-  /* timeline */
-  .timeline{
-    width: 600px;
+@media screen and (max-width: 768px){
+  header>a{
+    position: static;
+    top: auto;
+    right: auto;
+    padding: 7px 40px;
   }
 
-  .timebox{
-    width: 40%;
+  header{
+    padding-bottom: 20px;
   }
 
-  .timebox::after{
-    right: 8px;
-  }
+}
+
+@media screen and (max-width: 660px){
+  /* parcour */
+     .timeline{
+       display: none;
+     }
+
+     .parcourMobile{
+       display: block;
+     }
+
+     /* Compétences */
+     .comp{
+       width: 100%;
+     }
+
+      .compIcons{
+        width: calc(100%/3);
+      }
+
+     .compTitle{
+       margin-top: 20px;
+       margin-bottom: 0;
+     }
 }
 
 @media screen and (max-width:480px){
@@ -495,23 +523,15 @@ h3{
      width: 100%;
    }
 
-   /* Compétences */
-   .comp, .compIcons{
+   /* compétences */
+   .compIcons{
      width: 100%;
    }
+}
 
-   .compTitle{
-     margin-top: 20px;
-     margin-bottom: 0;
-   }
-
-   /* parcours */
-
-   .timeline{
-     display: none;
-   }
-
-   .parcourMobile{
-     display: block;
-   }
+@media screen and (max-width:350px){
+  .backgroundPic{
+    height: 850px;
+    width: 100%;
+  }
 }
