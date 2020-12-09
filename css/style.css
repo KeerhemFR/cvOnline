@@ -8,10 +8,6 @@ header{
   position: relative;
 }
 
-body{
-  padding-bottom: 20px;
-}
-
 header>a{
   padding: 7px 40px;
   border: solid white 4px;
@@ -58,6 +54,14 @@ h3{
   text-align: center;
   padding: 30px 0;
   clear: both;
+}
+
+.copyright{
+  margin-top: 10px;
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .alignRight{
