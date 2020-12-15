@@ -417,6 +417,13 @@ h3{
   margin: 10px;
   background-position: center;
   background-size: cover;
+  filter: brightness(60%);
+  transition: 0.5s;
+}
+
+.portCase:hover{
+  filter: brightness(1);
+  transition: 0.5s;
 }
 
 .lightbox {
