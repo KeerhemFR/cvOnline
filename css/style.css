@@ -504,7 +504,7 @@ h3{
   }
 
   .portCase{
-    width: 40%;
+    width: 45%;
   }
 
 }
@@ -586,6 +586,10 @@ h3{
    /* compétences */
    .compIcons{
      width: 100%;
+   }
+
+   .portCase{
+     width: 80%;
    }
 }
 
