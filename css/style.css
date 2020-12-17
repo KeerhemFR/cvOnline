@@ -56,9 +56,15 @@ h3{
   clear: both;
 }
 
+p{
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  color: #282E3A
+}
+
 .copyright{
   margin-top: 10px;
-  color: black;
+  font-size: 14px;
   display: block;
   width: 100%;
   text-align: center;
