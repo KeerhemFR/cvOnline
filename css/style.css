@@ -63,11 +63,17 @@ p{
 }
 
 .copyright{
-  margin-top: 10px;
+  margin: 10px 0;
+  padding-top: 10px;
+  border-top: 2px solid #C0453E;
   font-size: 14px;
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.pied{
+  padding:0 30% 0 30%;
 }
 
 .alignRight{
