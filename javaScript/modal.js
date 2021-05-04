@@ -1,0 +1,1 @@
+// modal related in JQuery

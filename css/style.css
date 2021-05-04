@@ -421,58 +421,28 @@ p{
   text-align: center;
 }
 
-.portCase{
+.portfolio-card{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #282E3A;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #7f7f7f;
+  padding: 10px;
+}
+
+.card-left{
   display: inline-block;
-  text-align: center;
-  width: 20%;
-  height: 200px;
-  border: solid 3px #282E3A;
-  margin: 10px;
-  background-position: center;
-  background-size: cover;
-  filter: brightness(60%);
-  transition: 0.5s;
+  width: 50%;
+  border-right: 2px solid #C0453E;
+  padding: 15px;
 }
 
-.portCase:hover{
-  filter: brightness(1);
-  transition: 0.5s;
-}
-
-.lightbox {
-  /* Default to hidden */
-  display: none;
-
-  /* Overlay entire screen */
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  /* A bit of padding around image */
-  padding: 1em;
-
-  /* Translucent background */
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* Unhide the lightbox when it's the target */
-.lightbox:target {
-  display: block;
-}
-
-.lightbox span {
-  /* Full width and height */
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  /* Size and position background image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.card-right{
+  display: inline-block;
+  width: 50%;
+  border-left: 2px solid #C0453E;
+  padding: 15px;
 }
 
 @media screen and (max-width: 1024px){

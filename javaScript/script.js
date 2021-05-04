@@ -1,3 +1,4 @@
+// tab nav related
 function openPage(pageName, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, contenu, menu;
@@ -21,6 +22,7 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+// end of the tab nav related part
 
 // copyright
 let year = new Date().getFullYear();
