@@ -453,6 +453,7 @@ background-color: rgba(0,0,0,0.5);
 }
 
 .popup-content{
+position: relative;
 width: 80%;
 height: 80%;
 padding: 25px;
@@ -463,6 +464,7 @@ overflow: scroll;
 }
 
 .popup-close{
+  position: absolute;
   width: 35px;
   height: 35px;
   background-color: #c0c0c0;
