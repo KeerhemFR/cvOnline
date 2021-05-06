@@ -450,6 +450,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: rgba(0,0,0,0.5);
+z-index: 100;
 }
 
 .popup-content{
@@ -486,7 +487,7 @@ overflow: scroll;
 .portfolio-card{
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto;
   border: 2px solid #282E3A;
   border-radius: 10px;
   box-shadow: 3px 3px 5px #7f7f7f;
@@ -496,6 +497,7 @@ overflow: scroll;
 .portfolio-card p{
   font-size: 20px;
   padding: 20px 0;
+  line-height: 120%;
 }
 
 .portfolio-card h3{
@@ -504,13 +506,13 @@ overflow: scroll;
 
 .card-left{
   display: inline-block;
-  width: 50%;
+  width: 40%;
   padding: 15px 25px;
 }
 
 .card-right{
   display: inline-block;
-  width: 50%;
+  width: 60%;
   padding: 15px 25px;
 }
 
@@ -541,6 +543,15 @@ overflow: scroll;
   border-radius: 15px;
 }
 
+.modal-img-container{
+  height: 100%;
+}
+
+.modal-img-container img{
+  height: 100%;
+}
+
+
 .card-button{
   display: block;
   margin: 10px auto;
@@ -549,6 +560,7 @@ overflow: scroll;
   border-radius: 50px;
   padding: 5px 15px;
   color: #C0453E;
+  background-color: #ffffff;
   transition: 0.2s;
   font-weight: 500;
   font-family: "Rajdhani", sans-serif;
@@ -561,6 +573,10 @@ overflow: scroll;
 }
 
 #modal-1{
+  visibility: hidden;
+}
+
+#modal-2{
   visibility: hidden;
 }
 

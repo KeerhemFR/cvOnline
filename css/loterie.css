@@ -1,0 +1,18 @@
+#modal-2 .popup-content{
+  background-color: #ecbd90;
+  text-align: center;
+}
+
+.modal-2-button{
+  padding: 30px;
+  font-size: 30px;
+}
+
+.modal-2-div{
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.modal-2-p{
+  font-size: 40px;
+}

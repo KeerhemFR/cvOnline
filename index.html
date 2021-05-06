@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/diceroll.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/loterie.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="favicon-96x96.png"/>
+    <link rel="shortcut icon" type="image/png" href="gk-favicon-128px.png"/>
   </head>
 
   <body>
@@ -300,13 +301,13 @@
       <!-- portfolio -->
       <section class="contenu" id="portfolio">
         <h3>Portfolio</h3>
-        <!-- modal, lightbox, carrousel, slideshow -->
+        <!-- carousel -->
         <div class="owl-carousel owl-theme">
-          <!-- dice roll card & modal -->
+          <!-- dice roll card -->
           <div class="portfolio-card">
             <div class="card-left thumbnail-parent">
               <div class="card-thumbnail">
-                <img src="img\diceroll-thumbnail.png" alt="">
+                <img src="img\mockup-diceroll.jpg" alt="">
               </div>
             </div>
 
@@ -317,110 +318,170 @@
               <button type="button" name="button" class="card-button" id="modal-1-open">Open</button>
             </div>
           </div>
-
-          <div class="popup-overlay" id="modal-1">
-            <div class="popup-content">
-
-              <div class="popup-close" id="modal-1-close">
-                <img src="https://img.icons8.com/windows/35/ffffff/macos-close.png"/>
+          <!-- loterie card -->
+          <div class="portfolio-card">
+            <div class="card-left thumbnail-parent">
+              <div class="card-thumbnail">
+                <img src="img\mockup-loterie.jpg" alt="">
               </div>
+            </div>
 
-              <p class="modal-1-h1">Dice Roll Simulator</p>
-              <!-- bouton d4 -->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 4)">1d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 4)">2d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 4)">3d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 4)">4d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 4)">5d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 4)">6d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 4)">7d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 4)">8d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 4)">9d4</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 4)">10d4</button>
-              </div>
-
-              <!-- bouton d6-->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 6)">1d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 6)">2d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 6)">3d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 6)">4d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 6)">5d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 6)">6d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 6)">7d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 6)">8d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 6)">9d6</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 6)">10d6</button>
-              </div>
-
-              <!-- bouton d8 -->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 8)">1d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 8)">2d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 8)">3d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 8)">4d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 8)">5d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 8)">6d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 8)">7d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 8)">8d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 8)">9d8</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 8)">10d8</button>
-              </div>
-
-              <!-- bouton d10 -->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 10)">1d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 10)">2d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 10)">3d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 10)">4d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 10)">5d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 10)">6d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 10)">7d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 10)">8d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 10)">9d10</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 10)">10d10</button>
-              </div>
-
-              <!-- bouton d20 -->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 20)">1d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 20)">2d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 20)">3d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 20)">4d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 20)">5d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 20)">6d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 20)">7d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 20)">8d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 20)">9d20</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 20)">10d20</button>
-              </div>
-
-              <!-- bouton d100 -->
-              <div class="halfPlus">
-                <button class="modal-1-button" type="button" name="button" onclick="simul(1, 100)">1d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(2, 100)">2d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(3, 100)">3d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(4, 100)">4d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(5, 100)">5d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(6, 100)">6d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(7, 100)">7d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(8, 100)">8d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(9, 100)">9d100</button>
-                <button class="modal-1-button" type="button" name="button" onclick="simul(10, 100)">10d100</button>
-              </div>
-
-              <div class="modal-1-div">
-                <button id="dice-choice" type="button" name="button" onclick="choose()">Choisissez vos dés</button>
-              </div>
-
-              <p class="modal-1-p">Vous avez eu les dés suivants : <span id=modal-1-resultat></span></p>
-              <p class="modal-1-p">Le total de vos dés donne : <span id="modal-1-accumuler"></span></p>
-              <p class="modal-1-p">Vous avez fait <span id="modal-1-reussite"></span> réussites critiques, et <span id="modal-1-echec"></span> échecs critiques.</p>
+            <div class="card-right card-border-right card-text">
+              <h3>Loterie de cadeaux</h3>
+              <p>Ce petit projet a été réalisé a Noël, afin de tirer au sort quel collègue recevra quel cadeaux.</p>
+              <p>L'utilisateur a la possibilité de rentrer plusieurs noms. Une fois tout les noms rentrés, un noms est tiré au sort pour chaque cadeau. Des boutons servent a réinitialiser la loterie, où a supprimer le dernier nom entré, en cas d'erreur.</p>
+              <button type="button" name="button" class="card-button" id="modal-2-open">Open</button>
             </div>
           </div>
-          <!-- END dice roll card & modal -->
+          <!-- gamejam card -->
+          <div class="portfolio-card">
+            <div class="card-left thumbnail-parent">
+              <div class="card-thumbnail">
+                <img src="img\mockup-gamejam.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="card-right card-border-right card-text">
+              <h3>Affiche publicitaire</h3>
+              <p>Affiche fictive réalisée avec Photoshop dans le cadre d'un exercice sur la communication publicitaire.</p>
+              <p>Fan de jeux vidéo, j'ai porté mon choix de sujet sur la Gamejam, un évènement où des développeurs doivent créer un jeu en l'espace d'un week-end.</p>
+              <button type="button" name="button" class="card-button" id="modal-3-open">Open</button>
+            </div>
+          </div>
         </div>
+
+        <!-- dice rollmodal -->
+        <div class="popup-overlay" id="modal-1">
+          <div class="popup-content">
+
+            <div class="popup-close" id="modal-1-close">
+              <img src="https://img.icons8.com/windows/35/ffffff/macos-close.png"/>
+            </div>
+
+            <p class="modal-1-h1">Dice Roll Simulator</p>
+            <!-- bouton d4 -->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 4)">1d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 4)">2d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 4)">3d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 4)">4d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 4)">5d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 4)">6d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 4)">7d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 4)">8d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 4)">9d4</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 4)">10d4</button>
+            </div>
+
+            <!-- bouton d6-->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 6)">1d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 6)">2d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 6)">3d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 6)">4d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 6)">5d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 6)">6d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 6)">7d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 6)">8d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 6)">9d6</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 6)">10d6</button>
+            </div>
+
+            <!-- bouton d8 -->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 8)">1d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 8)">2d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 8)">3d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 8)">4d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 8)">5d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 8)">6d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 8)">7d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 8)">8d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 8)">9d8</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 8)">10d8</button>
+            </div>
+
+            <!-- bouton d10 -->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 10)">1d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 10)">2d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 10)">3d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 10)">4d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 10)">5d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 10)">6d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 10)">7d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 10)">8d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 10)">9d10</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 10)">10d10</button>
+            </div>
+
+            <!-- bouton d20 -->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 20)">1d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 20)">2d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 20)">3d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 20)">4d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 20)">5d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 20)">6d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 20)">7d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 20)">8d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 20)">9d20</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 20)">10d20</button>
+            </div>
+
+            <!-- bouton d100 -->
+            <div class="halfPlus">
+              <button class="modal-1-button" type="button" name="button" onclick="simul(1, 100)">1d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(2, 100)">2d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(3, 100)">3d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(4, 100)">4d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(5, 100)">5d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(6, 100)">6d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(7, 100)">7d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(8, 100)">8d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(9, 100)">9d100</button>
+              <button class="modal-1-button" type="button" name="button" onclick="simul(10, 100)">10d100</button>
+            </div>
+
+            <div class="modal-1-div">
+              <button id="dice-choice" type="button" name="button" onclick="choose()">Choisissez vos dés</button>
+            </div>
+
+            <p class="modal-1-p">Vous avez eu les dés suivants : <span id=modal-1-resultat></span></p>
+            <p class="modal-1-p">Le total de vos dés donne : <span id="modal-1-accumuler"></span></p>
+            <p class="modal-1-p">Vous avez fait <span id="modal-1-reussite"></span> réussites critiques, et <span id="modal-1-echec"></span> échecs critiques.</p>
+          </div>
+        </div>
+        <!-- END dice roll modal -->
+        <!-- loterie modal -->
+        <div class="popup-overlay" id="modal-2">
+          <div class="popup-content">
+            <div class="popup-close" id="modal-2-close">
+              <img src="https://img.icons8.com/windows/35/ffffff/macos-close.png"/>
+            </div>
+            <div class="modal-2-body">
+              <button class=modal-2-button"" type="button" name="button" onclick="modal2Ajout()">Ajouter un nom</button>
+              <div class="modal-2-div">
+                <p class="modal-2-p" >Les gens séléctionnés pour le tirages sont :<br><span id="modal-2-tirage"></span></p>
+              </div>
+              <button class="modal-2-button" type="button" name="button" onclick="modal2Reset()">Reset</button>
+              <button class="modal-2-button" type="button" name="button" onclick="modal2Degage()">Supprimer le dernier prénom</button>
+              <button class="modal-2-button" type="button" name="button" onclick="modal2Roll()">Lancer le tirage</button>
+            </div>
+          </div>
+        <!-- END loterie modal -->
+        <!-- affiche pub modal -->
+        <div class="popup-overlay" id="modal-3">
+          <div class="popup-content">
+            <div class="popup-close" id="modal-3-close">
+              <img src="https://img.icons8.com/windows/35/ffffff/macos-close.png"/>
+            </div>
+            <div class="modal-img-container">
+              <img src="img/guillaume-keerhem-affiche-gamejam.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- END affiche pub modal -->
       </section>
     </main>
 
@@ -431,9 +492,10 @@
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="javaScript/owl.carousel.min.js"></script>
     <script type="text/javascript" src="javaScript/modal.js"></script>
     <script type="text/javascript" src="javaScript/script.js"></script>
     <script type="text/javascript" src="javaScript/diceroll.js"></script>
-    <script type="text/javascript" src="javaScript/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="javaScript/loterie.js"></script>
   </body>
 </html>

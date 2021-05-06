@@ -1,5 +1,6 @@
 // modal related in JQuery
 $(document).ready(function(){
+  // owl carousel
   $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
@@ -21,11 +22,26 @@ $(document).ready(function(){
               loop:true,
           }
       }
-  })  // dice roll modal on / off
+  });
+  // dice roll modal on / off
   $("#modal-1-open").on("click", function(){
     $("#modal-1").css("visibility","visible");
   });
   $("#modal-1-close").on("click", function(){
     $("#modal-1").css("visibility","hidden");
+  });
+  // loterie modal on / off
+  $("#modal-2-open").on("click", function(){
+    $("#modal-2").css("visibility","visible");
+  });
+  $("#modal-2-close").on("click", function(){
+    $("#modal-2").css("visibility","hidden");
+  });
+  // affiche pub modal on / off
+  $("#modal-3-open").on("click", function(){
+    $("#modal-3").css("visibility","visible");
+  });
+  $("#modal-3-close").on("click", function(){
+    $("#modal-3").css("visibility","hidden");
   });
 })
