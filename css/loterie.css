@@ -1,11 +1,31 @@
 #modal-2 .popup-content{
-  background-color: #ecbd90;
+  background-color: #8DC7F7;
   text-align: center;
 }
 
+.modal-2-h1{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+  padding-top: 0;
+}
+
 .modal-2-button{
-  padding: 30px;
-  font-size: 30px;
+  padding: 15px;
+  margin: 0 20px;
+  font-size: 18px;
+  border: 4px white solid;
+  border-radius: 50px;
+  background-color: #8DC7F7;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.modal-2-button:hover{
+  background-color: white;
+  font-weight: normal;
+  color: #8DC7F7;
 }
 
 .modal-2-div{
@@ -14,5 +34,13 @@
 }
 
 .modal-2-p{
-  font-size: 40px;
+  font-size: 30px;
+  color: white;
+  margin: 25px 0;
+}
+
+#modal-2-node-container > p {
+  margin: 10px 0;
+  color: white;
+  font-size: 22px;
 }

@@ -15,6 +15,7 @@ function modal2Ajout(){
 function modal2Reset(){
   modal2Loto = []
   document.getElementById("modal-2-tirage").innerHTML = modal2Loto;
+  document.getElementById("modal-2-node-container").innerHTML = "";
 };
 
 function modal2Degage(){
@@ -27,7 +28,8 @@ function modal2Roll(){
   for(modal2Nombre = 1; modal2Nombre < modal2j+1; modal2Nombre++){
     modal2t = modal2Loto.length;
     modal2Cadeau = Math.floor(Math.random() * modal2t);
-    alert("Le cadeau numéro " + modal2Nombre + " est gagné par " + modal2Loto[modal2Cadeau] + "!");
+    // alert("Le cadeau numéro " + modal2Nombre + " est gagné par " + modal2Loto[modal2Cadeau] + "!");
+    document.getElementById("modal-2-node-container").innerHTML += "<p>Le cadeau numéro " + modal2Nombre + " est gagné par " + modal2Loto[modal2Cadeau] + "!" + "<br>";
     modal2Loto.splice(modal2Cadeau, 1);
   };
 };

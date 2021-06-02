@@ -307,7 +307,7 @@
           <div class="portfolio-card">
             <div class="card-left thumbnail-parent">
               <div class="card-thumbnail">
-                <img src="img\mockup-diceroll.jpg" alt="">
+                <img src="img\mockup-diceroll.png" alt="">
               </div>
             </div>
 
@@ -322,7 +322,7 @@
           <div class="portfolio-card">
             <div class="card-left thumbnail-parent">
               <div class="card-thumbnail">
-                <img src="img\mockup-loterie.jpg" alt="">
+                <img src="img\mockup-loterie.png" alt="">
               </div>
             </div>
 
@@ -464,13 +464,16 @@
               <img src="https://img.icons8.com/windows/35/ffffff/macos-close.png"/>
             </div>
             <div class="modal-2-body">
-              <button class=modal-2-button"" type="button" name="button" onclick="modal2Ajout()">Ajouter un nom</button>
+              <h1 class="modal-2-h1">Loterie virtuelle</h1>
+              <button class="modal-2-button" type="button" name="button" onclick="modal2Ajout()">Ajouter un nom</button>
               <div class="modal-2-div">
                 <p class="modal-2-p" >Les gens séléctionnés pour le tirages sont :<br><span id="modal-2-tirage"></span></p>
               </div>
               <button class="modal-2-button" type="button" name="button" onclick="modal2Reset()">Reset</button>
               <button class="modal-2-button" type="button" name="button" onclick="modal2Degage()">Supprimer le dernier prénom</button>
               <button class="modal-2-button" type="button" name="button" onclick="modal2Roll()">Lancer le tirage</button>
+              <div id="modal-2-node-container">
+              </div>
             </div>
           </div>
         </div>
