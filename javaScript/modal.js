@@ -44,4 +44,18 @@ $(document).ready(function(){
   $("#modal-3-close").on("click", function(){
     $("#modal-3").css("visibility","hidden");
   });
+  // icone logo ai on / off
+  $("#modal-4-open").on("click", function(){
+    $("#modal-4").css("visibility","visible");
+  });
+  $("#modal-4-close").on("click", function(){
+    $("#modal-4").css("visibility","hidden");
+  });
+  // brochure atelier numerique on / off
+  $("#modal-5-open").on("click", function(){
+    $("#modal-5").css("visibility","visible");
+  });
+  $("#modal-5-close").on("click", function(){
+    $("#modal-5").css("visibility","hidden");
+  });
 })

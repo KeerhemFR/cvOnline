@@ -584,6 +584,14 @@ overflow: scroll;
   visibility: hidden;
 }
 
+#modal-4{
+  visibility: hidden;
+}
+
+#modal-5{
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1024px){
   /* timeline */
   .timeline{
