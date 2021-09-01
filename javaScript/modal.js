@@ -9,17 +9,17 @@ $(document).ready(function(){
           0:{
               items:1,
               nav:true,
-              loop:true,
+              loop:false,
           },
           600:{
               items:1,
               nav:true,
-              loop:true,
+              loop:false,
           },
           1000:{
               items:1,
               nav:true,
-              loop:true,
+              loop:false,
           }
       }
   });

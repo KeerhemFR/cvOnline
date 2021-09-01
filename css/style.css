@@ -465,7 +465,7 @@ overflow: scroll;
 }
 
 .popup-close{
-  position: absolute;
+  position: fixed;
   width: 35px;
   height: 35px;
   background-color: #c0c0c0;
@@ -475,6 +475,7 @@ overflow: scroll;
   top: 30px;
   right: 30px;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .popup-close img{
@@ -549,6 +550,16 @@ overflow: scroll;
 
 .modal-img-container img{
   height: 100%;
+}
+
+.modal-img-container-wide{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.modal-img-container-wide img{
+  width: 100%;
 }
 
 
