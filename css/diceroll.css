@@ -51,3 +51,13 @@
 #dice-choice{
   width: 30%;
 }
+
+@media screen and (max-width: 768px){
+  .modal-1-button{
+    width: calc(100%/6);
+  }
+
+  #dice-choice{
+    width: 50%;
+  }
+}

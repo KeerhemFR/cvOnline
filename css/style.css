@@ -489,10 +489,7 @@ overflow: scroll;
   display: flex;
   width: 80%;
   margin: 5px auto;
-  border: 2px solid #282E3A;
-  border-radius: 10px;
   box-shadow: 3px 3px 5px #7f7f7f;
-  padding: 10px;
 }
 
 .portfolio-card p{
@@ -508,13 +505,13 @@ overflow: scroll;
 .card-left{
   display: inline-block;
   width: 40%;
-  padding: 15px 25px;
 }
 
 .card-right{
   display: inline-block;
   width: 60%;
   padding: 15px 25px;
+  box-sizing: border-box;
 }
 
 .card-border-right{
@@ -530,18 +527,15 @@ overflow: scroll;
 }
 
 .card-thumbnail{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.thumbnail-parent{
-  margin: auto;
-}
-
 .card-thumbnail img{
   width: 100%;
-  border-radius: 15px;
+  object-fit: cover;
 }
 
 .modal-img-container{
@@ -553,7 +547,7 @@ overflow: scroll;
 }
 
 .modal-img-container-wide{
-  width: 70%;
+  width: 70vh;
   text-align: center;
   margin: 0 auto;
 }
@@ -581,6 +575,10 @@ overflow: scroll;
 .card-button:hover{
   background-color: #C0453E;
   color: white;
+}
+
+.owl-carousel .owl-item img{
+  height: 100%;
 }
 
 #modal-1{
@@ -738,6 +736,33 @@ overflow: scroll;
 
    .portCase{
      width: 80%;
+   }
+
+   .portfolio-card{
+     display: block;
+     width: 100%;
+   }
+
+   .card-left{
+     width: 100%;
+   }
+
+   .card-right{
+     width: 100%;
+   }
+
+   .card-border-right{
+     border: none;
+   }
+
+   .modal-img-container{
+     width: 100%;
+     height: auto;
+   }
+
+   .modal-img-container img{
+     width: 100%;
+     height: auto;
    }
 }
 
