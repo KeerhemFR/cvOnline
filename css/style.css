@@ -42,10 +42,17 @@ header>a{
   transition: 0.2s;
 }
 
-header>a:hover{
-  font-size: 22px;
-  padding: 9px 42px;
-  transition: 0.2s;
+header>a:after{
+  content: "▼";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+header>a:hover:after{
+  opacity: 1;
+  right: 10px;
 }
 
 h1{
